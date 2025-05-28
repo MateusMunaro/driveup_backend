@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  fastapi:
+    container_name: fastapi-backend
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    networks:
+      - backend-network
+    restart: always
+
+networks:
+  backend-network:
+    external: true
