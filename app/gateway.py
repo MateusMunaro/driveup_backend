@@ -17,4 +17,4 @@ router.include_router(governanca_router, prefix="/governanca", tags=["governanca
 router.include_router(client_router, prefix="/client", tags=["client_router"])
 router.include_router(car_router, prefix="/car", tags=["car_router"])
 router.include_router(company_router, prefix="/company", tags=["company_router"])
-router.include_router(hotel_router, prefix="/hotel", tags=["hotel_router"])
+router.include_router(hotel_router, prefix="/hotel", tags=["hotel_router"]) 
