@@ -1,7 +1,7 @@
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.models.models import *
-from app.schemas.schemas import *
+from models.models import *
+from schemas.schemas import *
 
 class CompanyRepository:
     @staticmethod

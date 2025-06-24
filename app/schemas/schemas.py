@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from datetime import date, datetime
 from typing import Optional, List, Dict, Any
-from app.models.models import *
+from models.models import *
 
 class Coordinates(BaseModel):
     latitude: float

@@ -4,9 +4,9 @@ from passlib.context import CryptContext
 from pydantic import BaseModel
 from typing import Optional, List
 from jose import JWTError, jwt
-from app.schemas.user_schemas import User, Token, TokenData
+from schemas.user_schemas import User, Token, TokenData
 from datetime import datetime, timedelta
-from app.repository.user_repository import UserRepository
+from repository.user_repository import UserRepository
 
 app = FastAPI()
 

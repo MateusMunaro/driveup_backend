@@ -1,12 +1,12 @@
 from fastapi import APIRouter
-from app.routs.ride_routs import router as rides_router
-from app.routs.view_stat_routs import router as view_router
-from app.routs.login_routs import router as login_router
-from app.routs.governance_routs import router as governanca_router
-from app.routs.client_routs import router as client_router
-from app.routs.car_routs import router as car_router
-from app.routs.company_routs import router as company_router
-from app.routs.hotel_routs import router as hotel_router
+from routs.ride_routs import router as rides_router
+from routs.view_stat_routs import router as view_router
+from routs.login_routs import router as login_router
+from routs.governance_routs import router as governanca_router
+from routs.client_routs import router as client_router
+from routs.car_routs import router as car_router
+from routs.company_routs import router as company_router
+from routs.hotel_routs import router as hotel_router
 
 router = APIRouter()
 

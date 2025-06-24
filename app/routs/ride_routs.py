@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, Body
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.database import AsyncSessionLocal
-from app.repository import *
-from app.database import get_db
-from app.schemas.schemas import *
-from app.services.rides import (
+from database import AsyncSessionLocal
+from repository import *
+from database import get_db
+from schemas.schemas import *
+from services.rides import (
     get_ride_by_month, 
     get_consistence_rides,
     create_tracked_ride,

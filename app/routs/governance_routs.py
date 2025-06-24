@@ -1,12 +1,12 @@
 from fastapi import FastAPI, Depends, HTTPException, status, APIRouter
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import datetime, timedelta
-from app.schemas.user_schemas import Token, User, TokenData
-from app.repository.governance_repository import GovernancaRepository
-from app.repository.user_repository import *
+from schemas.user_schemas import Token, User, TokenData
+from repository.governance_repository import GovernancaRepository
+from repository.user_repository import *
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.schemas.schemas import DriverSchema, RankingSchema
-from app.database import get_db
+from schemas.schemas import DriverSchema, RankingSchema
+from database import get_db
 from functools import partial
 from typing import Optional
 

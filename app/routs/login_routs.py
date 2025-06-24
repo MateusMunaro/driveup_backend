@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Depends, HTTPException, status, APIRouter
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from datetime import datetime, timedelta
-from app.schemas.user_schemas import Token, User, TokenData
-from app.services.login_service import create_access_token, get_current_user, get_current_user_with_role
-from app.repository.user_repository import UserRepository
+from schemas.user_schemas import Token, User, TokenData
+from services.login_service import create_access_token, get_current_user, get_current_user_with_role
+from repository.user_repository import UserRepository
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.database import get_db
+from database import get_db
 from functools import partial
 
 router = APIRouter()

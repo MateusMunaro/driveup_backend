@@ -1,5 +1,5 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.repository.ride_repository import RideRepository
+from repository.ride_repository import RideRepository
 from collections import defaultdict
 from datetime import *
 from typing import Optional, Dict, List, Any
