@@ -12,7 +12,7 @@ from services.rides import (
     get_ride_statistics,
     get_distance_per_ride 
 )
-from app.repository.ride_repository import RideRepository
+from repository.ride_repository import RideRepository
 from typing import Optional, Dict, Any, List
 from datetime import *
 
